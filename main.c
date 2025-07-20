@@ -49,10 +49,9 @@ int main(int argc, char *argv[])
 
     	for(int iter = 0 ; iter < argc ; iter++)
     	{
-        	if(strncmp(argv[iter],"-ascii_path", 12) == 0 && iter < argc - 1 ){
+        	if(strncmp(argv[iter],"-ascii_path", 12) == 0 && iter < argc - 1 )
             		return getThenPrintAscii(argv[iter+1]);
-            		break;
-        	}
+        	
     	}
 
     	getThenPrintAscii(defultAsciiPath);
