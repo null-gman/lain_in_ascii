@@ -7,9 +7,9 @@ A CLI program that echo the Lain character as ASCII art for GNU/Linux systems.
   - `-ascii_path <ascii file path>` , the defult value is `/etc/lain_in_ascii/lain.asc` file even if not exist .
 # Installation & Compilation
 ## Prerequisites
-- make
-- gcc (or any C compiler)
-- sudo permission
+- make.
+- gcc (or any C compiler).
+- sudo permission (however you can compile without sudo permission).
 ## Compilation
 - `$ make compile` , will compile the main.c to the executable `lain_in_ascii` in the current working directory , howerver the program will not function as the file `/etc/lain_in_ascii/lain.asc` is not found .
 ## Installation
