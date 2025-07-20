@@ -11,22 +11,22 @@
 #include <sys/stat.h> // For stat() and S_ISDIR
 
 int is_directory(const char *path) {
-    struct stat statbuf;
-    if (stat(path, &statbuf) != 0)
-        return 2;
-    return S_ISDIR(statbuf.st_mode);
+    	struct stat statbuf;
+    	if (stat(path, &statbuf) != 0)
+        	return 2;
+    	return S_ISDIR(statbuf.st_mode);
 }
 
 int getThenPrintAscii (const char * asciiArtFile)
 {
-    int is_directory_rc = is_directory(asciiArtFile);
-    if( is_directory_rc == 1 ){
-        printf("ascii_path is Directory !");
-        return 1;
-    }else if(is_directory_rc == 2){
-        printf("error has occurred while trying geting path stat !");
-        return 1;
-    }
+    	int is_directory_rc = is_directory(asciiArtFile);
+    	if( is_directory_rc == 1 ){
+        	printf("ascii_path is Directory !");
+        	return 1;
+    	}else if(is_directory_rc == 2){
+	        printf("error has occurred while trying geting path stat !");
+        	return 1;
+    	}
 
 	FILE * lain_ascii_file = fopen(asciiArtFile,"r");
 	if(!lain_ascii_file){
@@ -45,16 +45,16 @@ int getThenPrintAscii (const char * asciiArtFile)
 
 int main(int argc, char *argv[])
 {
-    const char defultAsciiPath[] = "/etc/lain_in_ascii/lain.asc";
+    	const char defultAsciiPath[] = "/etc/lain_in_ascii/lain.asc";
 
-    for(int iter = 0 ; iter < argc ; iter++)
-    {
-        if(strncmp(argv[iter],"-ascii_path", 12) == 0 && iter < argc - 1 ){
-            return getThenPrintAscii(argv[iter+1]);
-            break;
-        }
-    }
+    	for(int iter = 0 ; iter < argc ; iter++)
+    	{
+        	if(strncmp(argv[iter],"-ascii_path", 12) == 0 && iter < argc - 1 ){
+            		return getThenPrintAscii(argv[iter+1]);
+            		break;
+        	}
+    	}
 
-    getThenPrintAscii(defultAsciiPath);
-    return 0;
+    	getThenPrintAscii(defultAsciiPath);
+    	return 0;
 }
