@@ -49,4 +49,4 @@ The installation process will start by compiling the program in the current work
 ⠀⢦⠀⠀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 # ToDO
-- [ ] Add ASCII colours for the logs.
+- [ x ] Add ASCII colours for the logs.
