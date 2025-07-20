@@ -1,7 +1,10 @@
+# lain_in_ascii
 A CLI program that echo the Lain character as ASCII art for GNU/Linux systems.
-
+> Fun Fact: Use the cat utility rather than this nonsense.
 # Usage
-- `$ lain_in_ascii`
+- `$ lain_in_ascii [opthions]`
+- Opthions flags :
+  - `-ascii_path <ascii file path>` , the defult is `/etc/lain_in_ascii/lain.asc` file even if not exist .
 # Installation & Compilation
 ## Prerequisites
 - make
@@ -14,6 +17,8 @@ The installation process will start by compiling the program in the current work
 - `$ sudo make install`
 ## Uninstall
 - `$ sudo make uninstall` , will remove `/etc/lain_in_ascii/lain.asc` and `/usr/bin/lain_in_ascii`.
+## Reinstall
+- `$ sudo make reinstall` , will `make uninstall` than `make install` .
 
 # copyleft
 ⠀⠀⠀⠀⠀⠀⠀⢠⣤⣄⣀⣠⣤⣶⣿⣯⣿⣽⣾⣷⣶⣶⡦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -42,3 +47,6 @@ The installation process will start by compiling the program in the current work
 ⠀⢸⠀⠀⠀⠒⠒⠒⠒⠒⠂⠀⠐⠚⠑⠆⠀⠀⠒⠓⠀⠀⠀⠀⠀⣿⣿⣿⣿⡆⠀⠀⠀⣇⠀
 ⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁⠀
 ⠀⢦⠀⠀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+# ToDO
+- Add ASCII colours for the logs.
