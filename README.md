@@ -4,7 +4,7 @@ A CLI program that echo the Lain character as ASCII art for GNU/Linux systems.
 # Usage
 - `$ lain_in_ascii [opthions]`
 - Opthions flags :
-  - `-ascii_path <ascii file path>` , the defult is `/etc/lain_in_ascii/lain.asc` file even if not exist .
+  - `-ascii_path <ascii file path>` , the defult value is `/etc/lain_in_ascii/lain.asc` file even if not exist .
 # Installation & Compilation
 ## Prerequisites
 - make
