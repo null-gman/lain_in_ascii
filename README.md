@@ -18,7 +18,7 @@ The installation process will start by compiling the program in the current work
 ## Uninstall
 - `$ sudo make uninstall` , will remove `/etc/lain_in_ascii/lain.asc` and `/usr/bin/lain_in_ascii`.
 ## Reinstall
-- `$ sudo make reinstall` , will `make uninstall` than `make install` .
+- `$ sudo make reinstall` , will `make uninstall` then `make install` .
 
 # copyleft
 ⠀⠀⠀⠀⠀⠀⠀⢠⣤⣄⣀⣠⣤⣶⣿⣯⣿⣽⣾⣷⣶⣶⡦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
