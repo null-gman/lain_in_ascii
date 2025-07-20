@@ -23,3 +23,7 @@ clean :
 uninstall :
 	-rm -rf /etc/lain_in_ascii/
 	-rm /usr/bin/lain_in_ascii
+
+reinstall :
+	-make uninstall
+	make install
