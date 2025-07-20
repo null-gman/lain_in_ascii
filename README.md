@@ -1,4 +1,4 @@
-# lain_in_ascii
+# Lain_in_ascii
 A CLI program that echo the Lain character as ASCII art for GNU/Linux systems.
 > Fun Fact: Use the cat utility rather than this nonsense.
 # Usage
